@@ -44,10 +44,12 @@ public class Uke34 {
             throw new NoSuchElementException("Tabellen er tom!");
         }
 
-        int maxPos = 0; //Posisjonen til den storste verdien, starter med første indeks i array
+        int maxPos = 0; //Samenligningen starter med første indeks i array
+        int maxVerdi = tallArray[0];
         for(int tall = 1; tall<tallArray.length; tall++){
-            if( tallArray[tall] >= tallArray[maxPos]) { // >= gjør at det er den siste maksverdi posisjonen vises
+            if( tallArray[tall] >= maxVerdi) { // >= gjør at det er den siste maksverdi posisjonen vises
                 maxPos = tall;
+                maxVerdi = tallArray[tall];
             }
         }
         return maxPos;
@@ -85,7 +87,7 @@ public class Uke34 {
             throw new NoSuchElementException("Tallet må være større enn 0");
         }
         int n = 1;
-        for(int i = 1; i<=tall; i++){
+        for(int i = 2; i<=tall; i++){
             n *= i;
         }
         return n;

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="783fa044-90a0-4e4a-b547-2d3423087de3" name="Default Changelist" comment="" />
+    <list default="true" id="783fa044-90a0-4e4a-b547-2d3423087de3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kap1.2/Kap1.2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kap1.2/src/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kap1.2/src/Uke35.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kap1.2/src/hjelpeklasse/Tabell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kap1/src/Uke34.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kap1/src/Uke34.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,13 +35,28 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Program">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Program" />
+      <module name="Kap1.2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tabell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hjelpeklasse.Tabell" />
+      <module name="Kap1.2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Uke34" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Uke34" />
       <module name="Kap1" />
@@ -40,8 +64,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Uke35" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Uke35" />
+      <module name="Kap1.2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program" />
+        <item itemvalue="Application.Tabell" />
+        <item itemvalue="Application.Uke35" />
         <item itemvalue="Application.Uke34" />
       </list>
     </recent_temporary>
@@ -64,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597694758252</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Legger til ukes oppgavene til uke34">
+      <created>1597767664850</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597767664850</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -72,41 +113,62 @@
     <option name="LAST_COMMIT_MESSAGE" value="Legger til ukes oppgavene til uke34" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1597694757651">
+    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1597767664637">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1597694757651" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1597694765250">
+    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1597767664637" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1598386344645">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597694765250" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1597694765249">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598386344645" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1598378217675" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1598386344644">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597694765249" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1597694765248">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598386344644" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1598378217666" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1598386344643">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597694765248" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1597694765249">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598386344643" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1598378217665" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1598386344644">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597694765249" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1597694785991">
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598386344644" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1598378217668" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1598375690472">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1597694785991" />
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1597691073581">
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598375690472" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1598375690469">
       <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1598375690469" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1598375690468">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1598375690468" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1598375690470">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1598375690470" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1597767679643">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1597767679643" />
+    <state x="317" y="248" key="com.intellij.ide.util.TipDialog" timestamp="1598249501628">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1597691073581" />
+    <state x="317" y="248" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1598249501627" />
     <state x="221" y="125" width="837" height="550" key="find.popup" timestamp="1597693410884">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="221" y="125" width="837" height="550" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1597693410884" />
-    <state x="17" y="22" key="new project wizard" timestamp="1597691174524">
+    <state x="17" y="23" key="new project wizard" timestamp="1598295035070">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="17" y="22" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1597691174524" />
+    <state x="17" y="23" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1598295035070" />
   </component>
 </project>
