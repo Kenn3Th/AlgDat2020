@@ -2,7 +2,7 @@
 
 Denne oppgaven er en innlevering i Algoritmer og Datastrukturer. 
 Oppgaven er levert av følgende studenter:
-* Navn Navnesen, S123456, s123456@oslomet.no
+* Kenneth R. Eikrehagen, S331475, s331475@oslomet.no
 * ...
 
 # Arbeidsfordeling
