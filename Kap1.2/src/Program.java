@@ -34,7 +34,7 @@ public class Program
         Tabell.skrivln(a,4,11);
         System.out.println("Det fungerte igjen");
         */
-        
+
         /**** Seksjon 1.2.3 ****/
         //oppgave 3
         System.out.println("Tester Feil og unntaks koden");
