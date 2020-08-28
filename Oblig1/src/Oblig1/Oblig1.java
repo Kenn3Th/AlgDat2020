@@ -13,14 +13,17 @@ public class Oblig1 {
         }
         int begin = 0;
         int end = tallrekke.length -1;
-        for (int i = 0; i <end; i++) {
+        int max = tallrekke[0];
+        for (int i = begin; i < end; i++) {
             if(tallrekke[i]>tallrekke[i+1]){
-                int max = tallrekke[i];
+                max = tallrekke[i];
                 tallrekke[i] = tallrekke[i+1];
                 tallrekke[i+1] = max;
+            }else if(tallrekke[i+1]>max){
+                max=tallrekke[i+1];
             }
         }
-        return max //Returnerer den maksimale verdien i tallrekken
+        return max; //Returnerer den maksimale verdien i tallrekken
     }
 
     public static int ombyttinger(int[] tallrekke) {
@@ -30,17 +33,39 @@ public class Oblig1 {
         int begin = 0;
         int end = tallrekke.length - 1;
         int byttet = 0;
-        for (int i = 0; i <end; i++) {
+        for (int i = begin; i <end; i++) {
             if(tallrekke[i]>tallrekke[i+1]){
-                bytt += 1;
+                int temp = tallrekke[i];
+                tallrekke[i] = tallrekke[i+1];
+                tallrekke[i+1] = temp;
+                byttet += 1;
             }
         }
-        return bytt //Returnerer hvor mange ganger det ble gjennomført ombytter
+        System.out.println(byttet);
+        return byttet; //Returnerer hvor mange ganger det ble gjennomført ombytter
     }
 
     /********************* Oppgave 2 *********************/
-    public static int antallUlikeSortert(int[] a) {
-        throw new UnsupportedOperationException();
+    public static int antallUlikeSortert(int[] tallrekke) {
+        if(tallrekke.length == 0){
+            //System.out.println("Tabellen er tom og har derfor "+ 0 +" forskjellige verdier");
+            return 0;
+        }
+        else {
+            int end = tallrekke.length - 1;
+            for (int i = 0; i < end; i++) {
+                if (tallrekke[i + 1] < tallrekke[i]) {
+                    throw new IllegalStateException("Tabellen er ikke sortert stigende!");
+                }
+            }
+            int forskjell = 1;
+            for (int i = 0; i < end; i++) {
+                if (tallrekke[i] != tallrekke[i + 1]) {
+                    forskjell += 1;
+                }
+            }
+            return forskjell; // returnerer antall forskjellige verdier i tallrekken
+        }
     }
 
     /********************* Oppgave 3 *********************/

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="783fa044-90a0-4e4a-b547-2d3423087de3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oblig1/Oblig1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oblig1/src/egenTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oblig1/Oblig1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="Application.egenTest">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Program" />
       <module name="Kap1.2" />
@@ -70,8 +71,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="egenTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="egenTest" />
+      <module name="Oblig1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.egenTest" />
         <item itemvalue="Application.Program" />
         <item itemvalue="Application.Tabell" />
         <item itemvalue="Application.Uke35" />
@@ -132,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598553344398</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Oppdatert Oblig1">
+      <created>1598591235279</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598591235279</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,32 +157,33 @@
     <MESSAGE value="Legger til ukes oppgavene til uke35" />
     <MESSAGE value="Lagt til oblig1 filen" />
     <MESSAGE value="Oppdatert README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oppdatert README.md" />
+    <MESSAGE value="Oppdatert Oblig1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oppdatert Oblig1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1598553344103">
+    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1598591234913">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1598553344103" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1598589970504">
+    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1598591234913" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1598596252388">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598589970504" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598596252388" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1598378217675" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1598589970502">
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1598596252387">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598589970502" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598596252387" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1598378217666" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1598589970501">
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1598596252386">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598589970501" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598596252386" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1598378217665" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1598589970503">
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1598596252387">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598589970503" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598596252387" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1598378217668" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1598375690472">
       <screen x="0" y="0" width="1280" height="800" />
@@ -184,10 +201,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1598375690470" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598553348770">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598591238597">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598553348770" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598591238597" />
     <state x="317" y="248" key="com.intellij.ide.util.TipDialog" timestamp="1598249501628">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

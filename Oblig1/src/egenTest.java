@@ -1,0 +1,132 @@
+import Oblig1.*;
+
+////// Testprogram for Oblig 1 ////////////////////////
+
+/*
+Testprogrammet har en main-metode som tester metodene i de 10 oppgavene.
+Som utgangspunkt er metodekallene kommentert vekk. Her må en passe på
+å bruke nøyaktig samme navn på metodene som det er bedt om i oppgaveteksten.
+
+Når en mener at en oppgave/metode er løst, bør en først teste med egne tester.
+Når en så tror at koden er feilfri, kan testprogrammet brukes ved at
+kommentartegnet foran metodekallet tas vekk. Testprogrammet må gi 0 feil før
+Oblig 1 sendes inn!
+*/
+
+import java.util.*;
+
+/**
+ * Alle tester i denne klassen skal passere når du leverer inn.
+ * Du skal ikke endre noe som helst i denne filen
+ */
+public class egenTest {
+    public static void main(String[] args){
+        oppgave1();
+        oppgave2();
+    }
+    ///// Oppgave 1 //////////////////////////////////////
+    //@org.junit.jupiter.api.Test
+    static void oppgave1() {
+        int antallFeil = 0;
+
+        boolean unntak = false;
+        int[] tom = {};
+        try {
+            Oblig1.maks(tom);  // kaller maks-metoden
+        } catch (Exception e) {
+            unntak = true;
+            if (!(e instanceof java.util.NoSuchElementException)) {
+                System.out.println("Opgave 1: a) Feil unntak for en tom tabell!");
+                antallFeil++;
+            }
+        }
+
+        if (!unntak) {
+            System.out.println("Opgave 1: b) Kast unntak for en tom tabell!");
+            antallFeil++;
+        }
+
+        int[] a = {3};
+        int[] b = {5, 2, 8, 4, 7, 6};
+        int[] c = {5, 4, 3, 2, 1};
+        int[] d = {1, 2, 3, 4, 5};
+        if (Oblig1.maks(a) != 3 || Oblig1.maks(b) != 8 ||
+                Oblig1.maks(c) != 5 || Oblig1.maks(d) != 5) {
+            System.out.println("Oppgave 1: c) Maks-metoden: Feil resultat!");
+            antallFeil++;
+        }
+
+        int[] e = {1, 4, 3, 7, 6, 5, 10, 2, 9, 8};
+        int[] f = {1, 3, 4, 6, 5, 7, 2, 9, 8, 10};
+
+        Oblig1.maks(e);
+        if (!Arrays.equals(e, f)) {
+            System.out.println("Oppgave 1: d) Maks-metoden: feil i ombyttingene!");
+            antallFeil++;
+        }
+
+        a = new int[]{6, 5, 4, 3, 2, 1};
+        b = new int[]{1, 2, 3, 4, 5};
+        c = new int[]{4, 9, 3, 6, 1, 5, 7, 8, 10, 2};
+        d = new int[]{2, 5, 8, 4, 3, 10, 1, 7, 6, 9};
+
+        if (Oblig1.ombyttinger(a) != 5 || Oblig1.ombyttinger(b) != 0
+                || Oblig1.ombyttinger(c) != 7 || Oblig1.ombyttinger(d) != 6) {
+            System.out.println("Oppgave 1: e) Feil opptelling i ombyttingsmetoden!");
+            antallFeil++;
+        }
+        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 1");
+    }
+
+    ///// Oppgave 2 /////////////////////////////////////
+    //@org.junit.jupiter.api.Test
+    static void oppgave2() {
+        int antallFeil = 0;
+
+        int[] a = {};
+        int[] b = {1};
+        int[] c = {1, 2, 3, 4, 5, 4};
+
+        try {
+            Oblig1.antallUlikeSortert(a);  // kaller metoden
+            Oblig1.antallUlikeSortert(b);  // kaller metoden
+        } catch (Exception e) {
+            System.out.println
+                    ("Oppgave 2: a) Ikke unntak for tabell med 0 eller 1 verdi!");
+            antallFeil++;
+        }
+
+        boolean unntak = false;
+
+        try {
+            Oblig1.antallUlikeSortert(c);  // kaller metoden
+        } catch (Exception e) {
+            unntak = true;
+            if (!(e instanceof IllegalStateException)) {
+                System.out.println
+                        ("Oppgave 2: b) Feil unntak for en usortert tabell!");
+                antallFeil++;
+            }
+        }
+
+        if (!unntak) {
+            System.out.println
+                    ("Oppgave 2: c) Kast et unntak for en usortert tabell!");
+            antallFeil++;
+        }
+
+        int[] d = {1, 1};
+        int[] e = {1, 2, 3, 4, 5, 6, 7};
+        int[] f = {1, 1, 2, 2, 2, 3, 4, 4, 5, 6, 6, 6, 6, 7};
+
+        if (Oblig1.antallUlikeSortert(a) != 0
+                || Oblig1.antallUlikeSortert(b) != 1
+                || Oblig1.antallUlikeSortert(d) != 1
+                || Oblig1.antallUlikeSortert(e) != 7
+                || Oblig1.antallUlikeSortert(f) != 7) {
+            System.out.println("Oppgave 2: d) Metoden gir feil resultat!");
+            antallFeil++;
+        }
+        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 2");
+    }
+}
