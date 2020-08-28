@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="783fa044-90a0-4e4a-b547-2d3423087de3" name="Default Changelist" comment="Lagt til oblig1 filen">
-      <change afterPath="$PROJECT_DIR$/Oblig1/Oblig1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Oblig1/Oblig1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Oblig1/Oblig1UnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Oblig1/README.md" afterDir="false" />
+    <list default="true" id="783fa044-90a0-4e4a-b547-2d3423087de3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kap1.2/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kap1.2/src/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oblig1/Oblig1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +22,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gEsQ5z1W1g1LqNHz1Dv5AgDOQ5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -110,39 +111,62 @@
       <option name="project" value="LOCAL" />
       <updated>1598386417005</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lagt til oblig1 filen">
+      <created>1598553122025</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598553122028</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Oppdatert README.md">
+      <created>1598553274331</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598553274331</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Oppdatert README.md">
+      <created>1598553344398</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598553344398</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Legger til ukes oppgavene til uke34" />
     <MESSAGE value="Legger til ukes oppgavene til uke35" />
     <MESSAGE value="Lagt til oblig1 filen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt til oblig1 filen" />
+    <MESSAGE value="Oppdatert README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oppdatert README.md" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1598553274028">
+    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1598553344103">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1598553274028" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1598386344645">
+    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1598553344103" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1598589970504">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598386344645" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598589970504" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1598378217675" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1598386344644">
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1598589970502">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598386344644" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598589970502" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1598378217666" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1598386344643">
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1598589970501">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598386344643" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598589970501" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1598378217665" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1598386344644">
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1598589970503">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598386344644" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598589970503" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1598378217668" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1598375690472">
       <screen x="0" y="0" width="1280" height="800" />
@@ -160,10 +184,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1598375690470" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598553279698">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598553348770">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598553279698" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598553348770" />
     <state x="317" y="248" key="com.intellij.ide.util.TipDialog" timestamp="1598249501628">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -173,9 +197,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="221" y="125" width="837" height="550" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1597693410884" />
-    <state x="17" y="23" key="new project wizard" timestamp="1598295035070">
+    <state x="17" y="23" key="new project wizard" timestamp="1598591051270">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="17" y="23" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1598295035070" />
+    <state x="17" y="23" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1598591051270" />
   </component>
 </project>
