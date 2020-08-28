@@ -23,6 +23,7 @@ public class egenTest {
     public static void main(String[] args){
         oppgave1();
         oppgave2();
+        oppgave3();
     }
     ///// Oppgave 1 //////////////////////////////////////
     //@org.junit.jupiter.api.Test
@@ -128,5 +129,43 @@ public class egenTest {
             antallFeil++;
         }
         //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 2");
+    }
+
+    static void oppgave3() {
+        int antallFeil = 0;
+
+        int[] a = {};   // skal ikke kaste unntak her!
+        int[] b = {1};  // skal ikke kaste unntak her!
+        int[] c = {1, 1};
+        int[] d = {6, 2, 4, 6, 9, 1, 4, 9, 10};
+        int[] dkopi = {6, 2, 4, 6, 9, 1, 4, 9, 10};
+        int[] e = {5, 4, 3, 2, 1};
+        int[] f = {1, 2, 2, 2, 2, 2, 3};
+
+        try {
+            Oblig1.antallUlikeUsortert(a);  // kaller metoden
+            Oblig1.antallUlikeUsortert(b);  // kaller metoden
+        } catch (Exception ex) {
+            System.out.println
+                    ("Oppgave 3: a) Ikke unntak for tabell med 0 eller 1 verdi!");
+            antallFeil++;
+        }
+
+        if (Oblig1.antallUlikeUsortert(a) != 0
+                || Oblig1.antallUlikeUsortert(b) != 1
+                || Oblig1.antallUlikeUsortert(c) != 1
+                || Oblig1.antallUlikeUsortert(d) != 6
+                || Oblig1.antallUlikeUsortert(e) != 5
+                || Oblig1.antallUlikeUsortert(f) != 3) {
+            System.out.println("Oppgave 3: b) Metoden gir feil resultat!");
+            antallFeil++;
+        }
+
+        if (!Arrays.equals(d, dkopi)) {
+            System.out.println("Oppgave 3: c) Metoden endrer tabellen!");
+            antallFeil++;
+        }
+
+        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 3");
     }
 }

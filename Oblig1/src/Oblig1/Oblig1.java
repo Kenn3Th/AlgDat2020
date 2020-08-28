@@ -1,6 +1,7 @@
 package Oblig1;
 
 import java.util.*;
+import java.util.ArrayList;
 import java.lang.UnsupportedOperationException;
 
 public class Oblig1 {
@@ -41,7 +42,6 @@ public class Oblig1 {
                 byttet += 1;
             }
         }
-        System.out.println(byttet);
         return byttet; //Returnerer hvor mange ganger det ble gjennomført ombytter
     }
 
@@ -69,8 +69,19 @@ public class Oblig1 {
     }
 
     /********************* Oppgave 3 *********************/
-    public static int antallUlikeUsortert(int[] a) {
-        throw new UnsupportedOperationException();
+    public static int antallUlikeUsortert(int[] tallrekke) {
+        if(tallrekke.length == 0){
+            return 0;
+        }
+        else {
+            ArrayList<Integer> differentValues = new ArrayList<Integer>();
+            for(int tall : tallrekke){
+                if(!differentValues.contains(tall)){
+                    differentValues.add(tall);
+                }
+            }
+            return differentValues.size();
+        }
     }
 
     /********************* Oppgave 4 *********************/
