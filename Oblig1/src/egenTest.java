@@ -26,7 +26,6 @@ public class egenTest {
         oppgave3();
     }
     ///// Oppgave 1 //////////////////////////////////////
-    //@org.junit.jupiter.api.Test
     static void oppgave1() {
         int antallFeil = 0;
 
@@ -76,11 +75,9 @@ public class egenTest {
             System.out.println("Oppgave 1: e) Feil opptelling i ombyttingsmetoden!");
             antallFeil++;
         }
-        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 1");
     }
 
     ///// Oppgave 2 /////////////////////////////////////
-    //@org.junit.jupiter.api.Test
     static void oppgave2() {
         int antallFeil = 0;
 
@@ -128,9 +125,9 @@ public class egenTest {
             System.out.println("Oppgave 2: d) Metoden gir feil resultat!");
             antallFeil++;
         }
-        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 2");
     }
 
+    ///// Oppgave 3 /////////////////////////////////////
     static void oppgave3() {
         int antallFeil = 0;
 
@@ -166,6 +163,160 @@ public class egenTest {
             antallFeil++;
         }
 
-        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 3");
+
+    }
+
+    ///// Oppgave 4 //////////////////////////////////////
+    static void oppgave4() {
+        int antallFeil = 0;
+
+        int[] a = {};   // skal ikke kaste unntak her!
+
+        try {
+            Oblig1.delsortering(a);  // kaller metoden
+        } catch (Exception ex) {
+            System.out.println
+                    ("Oppgave 4: a) Ikke unntak for en tom tabell!");
+            antallFeil++;
+        }
+
+        a = new int[]{5};
+        int[] b = {5};
+
+        try {
+            Oblig1.delsortering(a);  // kaller metoden
+        } catch (Exception ex) {
+            System.out.println
+                    ("Oppgave 4: b) Skal ikke kastes unntak her!");
+            antallFeil++;
+        }
+
+        if (!Arrays.equals(a, b)) {
+            System.out.println
+                    ("Oppgave 4: c) Metoden gjør feil for en tabell en verdi!");
+            antallFeil++;
+        }
+
+        a = new int[]{4};
+        b = new int[]{4};
+
+        try {
+            Oblig1.delsortering(a);  // kaller metoden
+        } catch (Exception ex) {
+            System.out.println
+                    ("Oppgave 4: d) Skal ikke kastes unntak her!");
+            antallFeil++;
+        }
+
+        if (!Arrays.equals(a, b)) {
+            System.out.println
+                    ("Oppgave 4: e) Metoden gjør feil for en tabell en verdi!");
+            antallFeil++;
+        }
+
+        a = new int[]{4, 2, 6, 10, 8};
+        b = new int[]{2, 4, 6, 8, 10};
+
+        try {
+            Oblig1.delsortering(a);  // kaller metoden
+        } catch (Exception ex) {
+            System.out.println
+                    ("Oppgave 4: f) Det går galt hvis det kun er partall!");
+            antallFeil++;
+        }
+
+        if (!Arrays.equals(a, b)) {
+            System.out.println
+                    ("Oppgave 4: g) Det blir feil hvis det kun er partall!");
+            antallFeil++;
+        }
+
+        a = new int[]{9, 5, 3, 1, 7};
+        b = new int[]{1, 3, 5, 7, 9};
+
+        try {
+            Oblig1.delsortering(a);  // kaller metoden
+        } catch (Exception ex) {
+            System.out.println
+                    ("Oppgave 4: h) Det går galt hvis det kun er oddetall!");
+            antallFeil++;
+        }
+
+        if (!Arrays.equals(a, b)) {
+            System.out.println
+                    ("Oppgave 4: i) Det blir feil hvis det kun er oddetall!");
+            antallFeil++;
+        }
+/*
+        a = new int[]{1, 2, 3, 4, 5, 6};
+        b = new int[]{1, 3, 5, 2, 4, 6};
+        boolean flere = true;
+
+        do {
+            int[] c = a.clone();
+            Oblig1.delsortering(c);
+
+            if (!Arrays.equals(c, b)) {
+                System.out.println
+                        ("Oppgave 4: j) Gitt tabell:     " + Arrays.toString(a));
+                System.out.println
+                        ("              Metoden skal gi: " + Arrays.toString(b));
+                System.out.println
+                        ("              Du fikk:         " + Arrays.toString(c));
+
+                antallFeil++;
+                break;
+            }
+        } while (nestePermutasjon(a));
+*/
+        a = new int[]{-4, -1, 3, 0, 2, -3, -2, 4, 1};
+        b = new int[]{-3, -1, 1, 3, -4, -2, 0, 2, 4};
+
+        try {
+            Oblig1.delsortering(a);  // kaller metoden
+        } catch (Exception ex) {
+            System.out.println
+                    ("Oppgave 4: k) Skal ikke kastes unntak her!");
+            antallFeil++;
+        }
+
+        if (!Arrays.equals(a, b)) {
+            System.out.println
+                    ("Oppgave 4: l) Metoden gjør feil for negative verdier!");
+            antallFeil++;
+        }
+
+        if (antallFeil == 0) {
+            //a = randPerm(100000); //Finn ut hvor denne funksjonen er laget
+            long tid = System.currentTimeMillis();
+            Oblig1.delsortering(a);
+            tid = System.currentTimeMillis() - tid;
+
+            for (int i = 0; i < 50000; i++) {
+                if (a[i] != 2 * i + 1) {
+                    System.out.println
+                            ("Oppgave 4: m) Feil resultat for denne tabellen!");
+                    antallFeil++;
+                    break;
+                }
+            }
+
+            for (int i = 50000; i < 100000; i++) {
+                if (a[i] != 2 * (i - 49999)) {
+                    System.out.println
+                            ("Oppgave 4: n) Feil resultat for denne tabellen!");
+                    antallFeil++;
+                    break;
+                }
+            }
+
+            if (tid > 100) {
+                System.out.println
+                        ("Oppgave 4: o) Tid: " + tid + ". Metoden er for ineffektiv!");
+                System.out.println
+                        ("              Hint: Bruk en partisjoneringsteknikk!");
+                antallFeil++;
+            }
+        }
     }
 }

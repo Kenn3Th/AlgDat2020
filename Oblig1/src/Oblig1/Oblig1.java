@@ -85,7 +85,7 @@ public class Oblig1 {
     }
 
     /********************* Oppgave 4 *********************/
-    public static void delsortering(int[] a) {
+    public static void delsortering(int[] tallrekke) {
         throw new UnsupportedOperationException();
     }
 
