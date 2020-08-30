@@ -4,6 +4,7 @@ public class Program
 {
     public static void main(String ... args)      // hovedprogram
     {   /**** Seksjon 1.2.2 ****/
+    /*
         // Test for oppgave 1
         int[] a = Tabell.randPerm(20);              // en tilfeldig tabell
         for (int k : a) System.out.print(k + " ");  // skriver ut a
@@ -11,7 +12,7 @@ public class Program
         int m = Tabell.maksMetode2(a);   // finner posisjonen til største verdi
 
         System.out.println("\nStørste verdi er "+ a[m] +" og ligger på plass " + m);
-        /*
+
         // Test for oppgave 3
         char[] bokstaver = new char[]{'a','b','c','d','e','f','q'};
 
@@ -36,9 +37,22 @@ public class Program
         */
 
         /**** Seksjon 1.2.3 ****/
+        /*
         //oppgave 3
-        System.out.println("Tester Feil og unntaks koden");
+        System.out.println("Tester Feil og unntak i koden");
         Tabell.maksMetode1(a,8, 2);
+        */
+
+        /**** Seksjon 1.2.4 ****/
+
+        int[] a = Tabell.randPerm(20); // tilfeldig permutasjon av 1 . . 20
+        int[] b = Tabell.minNestMax(a);  // metoden returnerer en tabell
+
+        int m = b[0], nm = b[1];       // m for maks, nm for nestmaks
+
+        Tabell.skrivln(a);        // se Oppgave 5 i Avsnitt 1.2.2
+        System.out.print("Størst(" + a[m] + ") har posisjon " + m);
+        System.out.println(", nest størst(" + a[nm] + ") har posisjon " + nm);
 
     } // main
 

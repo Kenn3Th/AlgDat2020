@@ -1,5 +1,8 @@
 package Oblig1;
 
+import jdk.jshell.execution.Util;
+
+import java.sql.Array;
 import java.util.*;
 import java.util.ArrayList;
 import java.lang.UnsupportedOperationException;
@@ -111,8 +114,50 @@ public class Oblig1 {
     }
 
     /********************* Oppgave 8 *********************/
-    public static int[] indekssortering(int[] a) {
-        throw new UnsupportedOperationException();
+    public static int[] indekssortering(int[] tallrekke) {
+
+        int n = tallrekke.length;
+        int[] index = new int[n];
+        int[] klone = tallrekke.clone();
+        System.out.println("This is a after cloning in function: \n"+Arrays.toString(klone));
+        if(n > 1) {
+            System.out.println("This is a after entering if: \n"+Arrays.toString(klone));
+            int maxVar = tallrekke[maksPos(klone)] + 1;
+            for (int i = 0; i <n ; i++) {
+                int minPos = min(klone);
+                index[i] = minPos;
+                klone[minPos] = maxVar;
+            }
+        }
+      
+        return index;
+    }
+
+    public static int min(int[] tallrekke){
+        int end = tallrekke.length;
+        int minPos = 0;
+        int minst = tallrekke[minPos];
+
+        for (int i = 1; i < end ; i++) {
+            if(tallrekke[i]<minst){
+                minst = tallrekke[i];
+                minPos = i;
+            }
+        }
+        return minPos;
+    }
+
+    public static int maksPos(int[] tallrekke){
+        int end = tallrekke.length;
+        int maxPos = 0;
+        int maks = tallrekke[maxPos];
+        for (int i = 1; i < end ; i++) {
+            if (tallrekke[i]> maks){
+                maxPos = i;
+                maks = tallrekke[maxPos];
+            }
+        }
+        return maxPos;
     }
 
     /********************* Oppgave 9 *********************/

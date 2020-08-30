@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="783fa044-90a0-4e4a-b547-2d3423087de3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kap1.2/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kap1.2/src/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kap1.2/src/hjelpeklasse/Tabell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kap1.2/src/hjelpeklasse/Tabell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Oblig1/src/egenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oblig1/src/egenTest.java" afterDir="false" />
     </list>
@@ -19,6 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gEsQ5z1W1g1LqNHz1Dv5AgDOQ5" />
@@ -86,6 +89,18 @@
         <item itemvalue="Application.Uke34" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -161,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598601772206</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lagt til test for oppgave 4 men det er en feil">
+      <created>1598778513538</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598778513538</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -173,32 +195,33 @@
     <MESSAGE value="Oppdatert Oblig1" />
     <MESSAGE value="Oppdatert oppgave 1 og 2" />
     <MESSAGE value="Løst oppgave 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Løst oppgave 3" />
+    <MESSAGE value="Lagt til test for oppgave 4 men det er en feil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt til test for oppgave 4 men det er en feil" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1598601771840">
+    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1598778513103">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1598601771840" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1598778382953">
+    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1598778513103" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1598823076735">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598778382953" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598823076735" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1598601572755" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1598778382951">
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1598823076732">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598778382951" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598823076732" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1598601572753" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1598778382950">
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1598823076730">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598778382950" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598823076730" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1598601572752" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1598778382952">
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1598823076733">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598778382952" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598823076733" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1598601572754" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1598375690472">
       <screen x="0" y="0" width="1280" height="800" />
@@ -216,10 +239,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1598375690470" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598601775456">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598778697133">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598601775456" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598778697133" />
     <state x="317" y="248" key="com.intellij.ide.util.TipDialog" timestamp="1598249501628">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -233,5 +256,21 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="17" y="23" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1598591051270" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Kap1.2/src/hjelpeklasse/Tabell.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Kap1.2/src/Program.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -24,6 +24,15 @@ public class egenTest {
         oppgave1();
         oppgave2();
         oppgave3();
+        //oppgave8();
+
+        int[] a = new int[]{4,3,5,2,6,10,7,9,8,1};
+        int[] b = Oblig1.indekssortering(a);
+        System.out.println("this is a after "+ Arrays.toString(a));
+        System.out.println("this is index list  "+Arrays.toString(b));
+        for (int i = 0; i <a.length ; i++) {
+            System.out.print(a[b[i]] + " ");
+        }
     }
     ///// Oppgave 1 //////////////////////////////////////
     static void oppgave1() {
@@ -319,4 +328,154 @@ public class egenTest {
             }
         }
     }
+
+    ///// Oppgave 8 //////////////////////////////////////
+    static void oppgave8() {
+        int antallFeil = 0;
+
+        int[] a = {};  // en tom tabell
+        int[] indeks = null;
+
+        try {
+            indeks = Oblig1.indekssortering(a);  // kaller metoden
+        } catch (Exception e) {
+            System.out.println
+                    ("Opgave 8: a) Skal ikke kastes unntak for en tom tabell!");
+            antallFeil++;
+        }
+
+        if (indeks == null || indeks.length > 0) {
+            System.out.println
+                    ("Opgave 8: b) Indekstabellen skal ha lengde 0!");
+            antallFeil++;
+        }
+
+        a = new int[]{5};
+
+        try {
+            indeks = Oblig1.indekssortering(a);  // kaller metoden
+        } catch (Exception e) {
+            System.out.println
+                    ("Opgave 8: c) Skal ikke kastes unntak her!");
+            antallFeil++;
+        }
+
+        if (indeks == null || indeks.length == 0 || indeks.length > 1) {
+            System.out.println
+                    ("Opgave 8: d) Indekstabellen skal ha lengde 1!");
+            antallFeil++;
+        }
+
+        if (indeks[0] != 0) {
+            System.out.println
+                    ("Opgave 8: e) indeks[0] skal være lik 0!");
+            antallFeil++;
+        }
+
+        a = new int[]{1, 2, 3, 4, 5, 6};
+        int[] b = new int[]{1, 2, 3, 4, 5, 6};
+        boolean flere = true;
+
+        do {
+            int[] c = a.clone();
+            indeks = Oblig1.indekssortering(c);
+
+            if (!Arrays.equals(a, c)) {
+                System.out.println
+                        ("Oppgave 8: f) Tabellen før kallet:   " + Arrays.toString(a));
+                System.out.println
+                        ("              Tabellen etter kallet: " + Arrays.toString(c));
+                System.out.println
+                        ("              Parametertabellen skal ikke endres!");
+
+                antallFeil++;
+                break;
+            }
+
+            int[] d = new int[a.length];
+            for (int i = 0; i < d.length; i++) d[i] = a[indeks[i]];
+
+            if (!Arrays.equals(b, d)) {
+                System.out.println
+                        ("Oppgave 8: g) Feil i indekstabellen for a = " + Arrays.toString(a));
+
+                antallFeil++;
+                break;
+            }
+
+        } while (nestePermutasjon(a));
+
+        a = new int[]{5, 2, 8, 3, 5, 10, 7, 5, 2, 10, 6};
+        int[] c = a.clone();
+        b = new int[]{2, 2, 3, 5, 5, 5, 6, 7, 8, 10, 10};
+        indeks = Oblig1.indekssortering(a);
+        int[] d = new int[a.length];
+        for (int i = 0; i < d.length; i++) d[i] = a[indeks[i]];
+
+        if (!Arrays.equals(a, c)) {
+            System.out.println
+                    ("Oppgave 8: h) Parametertabellen endres når den er lik");
+            System.out.println
+                    ("            " + Arrays.toString(a));
+
+            antallFeil++;
+        }
+
+        if (!Arrays.equals(b, d)) {
+            System.out.println
+                    ("Oppgave 8: i) Feil i indekstabellen for a = " + Arrays.toString(a));
+
+            antallFeil++;
+        }
+
+        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 8");
+    }
+
+    ///// Hjelpemetoder /////////////////////////////
+
+    public static void bytt(int[] a, int i, int j) {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+
+    public static boolean nestePermutasjon(int[] a) {
+        int n = a.length;
+        int i = n - 2;
+
+        while (i >= 0 && a[i] > a[i + 1]) i--;
+
+        if (i < 0) return false;
+
+        int verdi = a[i];
+        int j = n - 1;
+
+        while (verdi > a[j]) j--;
+        bytt(a, i, j);
+
+        i++;
+        j = n - 1;
+        while (i < j) bytt(a, i++, j--);
+        return true;
+    }
+
+    public static int[] randPerm(int n)  // en effektiv versjon
+    {
+        Random r = new Random();         // en randomgenerator
+        int[] a = new int[n];            // en tabell med plass til n tall
+        for (int i = 0; i < n; i++)
+            a[i] = i + 1;                  // legger inn tallene 1, 2, . , n
+
+        for (int k = n - 1; k > 0; k--)  // løkke som går n - 1 ganger
+        {
+            int i = r.nextInt(k + 1);        // en tilfeldig tall fra 0 til k
+
+            int temp = a[k];
+            a[k] = a[i];
+            a[i] = temp;
+        }
+
+        return a;                        // permutasjonen returneres
+    }
+
 }

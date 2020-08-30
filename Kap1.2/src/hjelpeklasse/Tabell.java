@@ -23,6 +23,7 @@ public class Tabell {
         }
         return minPos;
     }
+
     //metode 2 har intervallet [venstre,høyre]
     public static int minMetode2(int[] rekke, int v, int h){
         vhKontroll(rekke.length, v, h); //Lagt til i oppgave 3 seksjon 1.2.3
@@ -40,7 +41,6 @@ public class Tabell {
 
     /**** Seksjon 1.2.2 ****/
     //Oppgave 1
-
     public static void byttTall(int[] a, int i, int j) { //Programkode 1.1.8 d)
         int temp = a[i];
         a[i] = a[j];
@@ -98,21 +98,23 @@ public class Tabell {
     }
 
     //Oppgave 3
-    public static void byttChar(char[] ord, int i, int j) {
+    public static void byttChar(char[] ord, int i, int j)
+    {
         char temp = ord[i];
         ord[i] = ord[j];
         ord[j] = temp;
     }
 
     //Oppgave 4
-    public static void skriv(int[] tallRekke, int fra, int til){
+    public static void skriv(int[] tallRekke, int fra, int til)
+    {
         for(int i = fra; i<til; i++){
             if (i==(til-1)) System.out.print(tallRekke[i]);
             else System.out.print(tallRekke[i] + " ");
         }
     }
 
-    public static void skriv(int[] tallRekke){
+    public static void skriv(int[] tallRekke) {
         for(int tall : tallRekke) System.out.print(tall + " ");
     }
 
@@ -129,7 +131,7 @@ public class Tabell {
     }
 
     /**** Seksjon 1.2.3 ****/
-    //Oppgave 1
+    //Oppgave 1 - 5
     public static void fratilKontroll(int tablengde, int fra, int til)
     {
         if (fra < 0)                                  // fra er negativ
@@ -162,4 +164,65 @@ public class Tabell {
             throw new IllegalArgumentException
                     ("v = " + v + ", h = " + h);
     }
+
+    /**** Seksjon 1.2.4 ****/
+
+    //Oppgave 1
+    public static int[] nestMaks(int[] a)  // legges i class Tabell
+    {
+        int n = a.length;   // tabellens lengde
+
+        if (n < 2) throw   // må ha minst to verdier!
+                new NoSuchElementException("a.length(" + n + ") < 2!");
+
+        int m = maksMetode2(a);  // m er posisjonen til tabellens største verdi
+
+        int nm;           // nm skal inneholde posisjonen til nest største verdi
+
+        if (m == 0)                            // den største ligger først
+        {
+            nm = maksMetode1(a, 1, n);                  // leter i a[1:n>
+        }
+        else if (m == n - 1)                   // den største ligger bakerst
+        {
+            nm = maksMetode1(a, 0, n - 1);              // leter i a[0:n-1>
+        }
+        else
+        {
+            int mv = maksMetode1(a, 0, m);              // leter i a[0:m>
+            int mh = maksMetode1(a, m + 1, n);          // leter i a[m+1:n>
+            nm = a[mh] > a[mv] ? mh : mv;        // hvem er størst?
+        }
+
+        return new int[] {m,nm};      // m i posisjon 0 , nm i posisjon
+
+    } // nestMaks
+
+    //Oppgave 2
+    public static int[] minNestMax(int[] tallrekke){
+        int n = tallrekke.length;   // tabellens lengde
+
+        if (n < 2) throw   // må ha minst to verdier!
+                new NoSuchElementException("a.length(" + n + ") < 2!");
+
+
+        int mPos = maksMetode2(tallrekke);  // m er posisjonen til tabellens største verdi
+        int nm; //nestmaks
+
+        if (mPos == 0) { //Hvis den største ligger først
+            nm = maksMetode1(tallrekke, 1, n);                  // leter i a[1:n>
+        }
+        else {
+            int temp = tallrekke[0];
+            int maks = tallrekke[mPos];
+            tallrekke[0] = maks;
+            tallrekke[mPos] = temp;
+            nm = maksMetode1(tallrekke, 1, n);
+            tallrekke[0] = temp;
+            tallrekke[mPos] = maks;
+        }
+        return new int[]{mPos,nm};
+    }
+
+
 }
