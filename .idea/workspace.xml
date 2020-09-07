@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598778513538</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Løst oppgave 8">
+      <created>1598824329659</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598824329659</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -196,57 +203,58 @@
     <MESSAGE value="Oppdatert oppgave 1 og 2" />
     <MESSAGE value="Løst oppgave 3" />
     <MESSAGE value="Lagt til test for oppgave 4 men det er en feil" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt til test for oppgave 4 men det er en feil" />
+    <MESSAGE value="Løst oppgave 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Løst oppgave 8" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1598778513103">
+    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1598824329242">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1598778513103" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1598823076735">
+    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1598824329242" />
+    <state width="1238" height="128" key="GridCell.Tab.0.bottom" timestamp="1599478301840">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598823076735" />
+    <state width="1238" height="128" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1599478301840" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1598601572755" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1598823076732">
+    <state width="1238" height="128" key="GridCell.Tab.0.center" timestamp="1599478301838">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598823076732" />
+    <state width="1238" height="128" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1599478301838" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1598601572753" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1598823076730">
+    <state width="1238" height="128" key="GridCell.Tab.0.left" timestamp="1599478301836">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598823076730" />
+    <state width="1238" height="128" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1599478301836" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1598601572752" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1598823076733">
+    <state width="1238" height="128" key="GridCell.Tab.0.right" timestamp="1599478301839">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598823076733" />
+    <state width="1238" height="128" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1599478301839" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1598601572754" />
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1598375690472">
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1598825191924">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598375690472" />
-    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1598375690469">
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598825191924" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1598825191923">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1598375690469" />
-    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1598375690468">
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1598825191923" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1598825191923">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1598375690468" />
-    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1598375690470">
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1598825191923" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1598825191924">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1598375690470" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598778697133">
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1598825191924" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598824336741">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598778697133" />
-    <state x="317" y="248" key="com.intellij.ide.util.TipDialog" timestamp="1598249501628">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598824336741" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1599045805692">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1597691073581" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1599045805692" />
     <state x="317" y="248" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1598249501627" />
     <state x="221" y="125" width="837" height="550" key="find.popup" timestamp="1597693410884">
       <screen x="0" y="0" width="1280" height="800" />
@@ -256,6 +264,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="17" y="23" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1598591051270" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1599463931768">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1599463931768" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -269,6 +281,24 @@
           <url>file://$PROJECT_DIR$/Kap1.2/src/Program.java</url>
           <line>5</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Kap1.2/src/hjelpeklasse/Tabell.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java</url>
+          <line>220</line>
+          <properties class="Oblig1.Oblig1">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

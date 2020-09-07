@@ -199,7 +199,7 @@ public class Tabell {
     } // nestMaks
 
     //Oppgave 2
-    public static int[] minNestMax(int[] tallrekke){
+    public static int[] KennethsNestMax(int[] tallrekke){
         int n = tallrekke.length;   // tabellens lengde
 
         if (n < 2) throw   // må ha minst to verdier!
@@ -223,6 +223,27 @@ public class Tabell {
         }
         return new int[]{mPos,nm};
     }
+
+    //Oppgave 4
+    public static void SorteringNestmaks(int[] tallrekke){
+        int n = tallrekke.length;
+        if(n<2) throw
+                new NoSuchElementException(n + " er ikke en tallrekke!");
+
+        int mPos = maksMetode2(tallrekke);
+        int index = n-1;
+        int temp = tallrekke[index];
+        tallrekke[index] = tallrekke[mPos];
+        tallrekke[mPos] = temp;
+
+        for (int i = 1; i < n; i++) {
+            temp = tallrekke[index-i];
+            mPos = maksMetode1(tallrekke,0, n-i);
+            tallrekke[index-i] = tallrekke[mPos];
+            tallrekke[mPos] = temp;
+        }
+    }
+
 
 
 }

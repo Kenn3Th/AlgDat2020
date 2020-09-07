@@ -24,15 +24,11 @@ public class egenTest {
         oppgave1();
         oppgave2();
         oppgave3();
-        //oppgave8();
+        oppgave4();
+        oppgave8();
+        oppgave5();
+        oppgave6();
 
-        int[] a = new int[]{4,3,5,2,6,10,7,9,8,1};
-        int[] b = Oblig1.indekssortering(a);
-        System.out.println("this is a after "+ Arrays.toString(a));
-        System.out.println("this is index list  "+Arrays.toString(b));
-        for (int i = 0; i <a.length ; i++) {
-            System.out.print(a[b[i]] + " ");
-        }
     }
     ///// Oppgave 1 //////////////////////////////////////
     static void oppgave1() {
@@ -156,7 +152,9 @@ public class egenTest {
                     ("Oppgave 3: a) Ikke unntak for tabell med 0 eller 1 verdi!");
             antallFeil++;
         }
-
+        if (Oblig1.antallUlikeUsortert(d) == 6){
+            System.out.println("Suksess");
+        }
         if (Oblig1.antallUlikeUsortert(a) != 0
                 || Oblig1.antallUlikeUsortert(b) != 1
                 || Oblig1.antallUlikeUsortert(c) != 1
@@ -166,6 +164,12 @@ public class egenTest {
             System.out.println("Oppgave 3: b) Metoden gir feil resultat!");
             antallFeil++;
         }
+        System.out.println("a: " + Oblig1.antallUlikeUsortert(a));
+        System.out.println("b: " + Oblig1.antallUlikeUsortert(b));
+        System.out.println("c: " + Oblig1.antallUlikeUsortert(c));
+        System.out.println("d: " + Oblig1.antallUlikeUsortert(d));
+        System.out.println("e: " + Oblig1.antallUlikeUsortert(e));
+        System.out.println("f: " + Oblig1.antallUlikeUsortert(f));
 
         if (!Arrays.equals(d, dkopi)) {
             System.out.println("Oppgave 3: c) Metoden endrer tabellen!");
@@ -327,6 +331,174 @@ public class egenTest {
                 antallFeil++;
             }
         }
+    }
+
+    ///// Oppgave 5 //////////////////////////////////////
+    static void oppgave5() {
+        int antallFeil = 0;
+
+        char[] a = {};
+
+        try {
+            Oblig1.rotasjon(a);  // kaller metoden
+        } catch (Exception e) {
+            System.out.println
+                    ("Oppgave 5: a) Skal ikke kaste unntak for en tom tabell!!");
+            antallFeil++;
+        }
+
+        char[] b = {'A'};
+        char[] b0 = {'A'};
+        Oblig1.rotasjon(b);
+        if (!Arrays.equals(b, b0)) {
+            System.out.println("Oppgave 5: b) Feil hvis tabellen har ett element!");
+            antallFeil++;
+        }
+
+        char[] c = {'A', 'B'};
+        char[] c0 = {'B', 'A'};
+        Oblig1.rotasjon(c);
+        if (!Arrays.equals(c, c0)) {
+            System.out.println("Oppgave 5: c) Feil hvis tabellen har to elementer!");
+            antallFeil++;
+        }
+
+        char[] d = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+        char[] d0 = {'J', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'};
+
+        Oblig1.rotasjon(d);
+        if (!Arrays.equals(d, d0)) {
+            System.out.println("Oppgave 5: d) Feil hvis tabellen har flere elementer!");
+            antallFeil++;
+        }
+
+        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 5");
+    }
+
+    ///// Oppgave 6 //////////////////////////////////////
+    static void oppgave6() {
+        int antallFeil = 0;
+
+        char[] a = {};
+
+        try {
+            Oblig1.rotasjon(a, 1);  // kaller metoden
+        } catch (Exception e) {
+            System.out.println(e);
+            System.out.println
+                    ("Oppgave 6: a) Skal ikke kaste unntak for en tom tabell!!");
+            antallFeil++;
+        }
+
+        char[] b = {'A'};
+        char[] b0 = {'A'};
+        Oblig1.rotasjon(b, 0);
+        if (!Arrays.equals(b, b0)) {
+            System.out.println("Oppgave 6: b) Feil hvis tabellen har ett element!");
+            antallFeil++;
+        }
+
+        Oblig1.rotasjon(b, 1);
+        if (!Arrays.equals(b, b0)) {
+            System.out.println("Oppgave 6: c) Feil hvis tabellen har ett element!");
+            antallFeil++;
+        }
+
+        Oblig1.rotasjon(b, -1);
+        if (!Arrays.equals(b, b0)) {
+            System.out.println("Oppgave 6: d) Feil hvis tabellen har ett element!");
+            antallFeil++;
+        }
+
+        char[] c = {'A', 'B'};
+        char[] c0 = {'B', 'A'};
+        Oblig1.rotasjon(c, 1);
+
+        if (!Arrays.equals(c, c0)) {
+            System.out.println("Oppgave 6: e) Feil hvis tabellen har to elementer!");
+            antallFeil++;
+        }
+
+        c = new char[]{'A', 'B'};
+
+        //System.out.println(c); //Sjekker listen før funksjonen
+        Oblig1.rotasjon(c, -1); //Kaller funksjonen
+        //System.out.println(c); //Sjekker listen etter funksjonen
+
+        if (!Arrays.equals(c, c0)) {
+            System.out.println("Oppgave 6: f) Feil hvis tabellen har to elementer!");
+            antallFeil++;
+        }
+
+        char[] d = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+        char[] d0 = {'G', 'H', 'I', 'J', 'A', 'B', 'C', 'D', 'E', 'F'};
+
+        Oblig1.rotasjon(d, 4);
+
+        if (!Arrays.equals(d, d0)) {
+            System.out.println("Oppgave 6: g) Feil hvis tabellen har flere elementer!");
+            antallFeil++;
+        }
+
+        d = new char[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+
+        Oblig1.rotasjon(d, -6);
+
+        if (!Arrays.equals(d, d0)) {
+            System.out.println("Oppgave 6: h) Feil hvis tabellen har flere elementer!");
+            antallFeil++;
+        }
+
+        char[] x = new char[100_000];
+        long tid = System.currentTimeMillis();
+        Oblig1.rotasjon(x, 99_999);
+        tid = System.currentTimeMillis() - tid;
+
+        if (tid > 20) {
+            double treg = tid/1000.0;
+            System.out.println("Oppgave 6: i) Metoden "
+                    + "er for ineffektiv. Må forbedres! " + tid+"ms");
+            System.out.println("Den bruker " + treg +  "s, skal være tid<0.02s");
+            antallFeil++;
+        }
+
+        tid = System.currentTimeMillis();
+        Oblig1.rotasjon(x, 199_999);
+        tid = System.currentTimeMillis() - tid;
+
+        if (tid > 20) {
+            double treg = tid/1000.0;
+            System.out.println("Oppgave 6: j) Metoden "
+                    + "er for ineffektiv. Må forbedres! " + tid + "ms");
+            System.out.println("Den bruker " + treg +  "s, skal være tid<0.02s");
+            antallFeil++;
+        }
+
+        tid = System.currentTimeMillis();
+        Oblig1.rotasjon(x, 50_000);
+        tid = System.currentTimeMillis() - tid;
+
+        if (tid > 20) {
+            double treg = tid/1000.0;
+            System.out.println("Oppgave 6: k) Metoden "
+                    + "er for ineffektiv. Må forbedres! " + tid + "ms");
+            System.out.println("Den bruker " + treg +  "s, skal være tid<0.02s");
+            antallFeil++;
+        }
+
+        tid = System.currentTimeMillis();
+        Oblig1.rotasjon(x, -40_000);
+        tid = System.currentTimeMillis() - tid;
+
+        if (tid > 20) {
+            double treg = tid/1000.0;
+            System.out.println("Oppgave 6: l) Metoden "
+                    + "er for ineffektiv. Må forbedres! " + tid + "ms");
+            System.out.println("Den bruker " + treg +  "s, skal være tid<0.02s");
+            antallFeil++;
+        }
+
+        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 6");
     }
 
     ///// Oppgave 8 //////////////////////////////////////

@@ -44,9 +44,9 @@ public class Program
         */
 
         /**** Seksjon 1.2.4 ****/
-
+        /*
         int[] a = Tabell.randPerm(20); // tilfeldig permutasjon av 1 . . 20
-        int[] b = Tabell.minNestMax(a);  // metoden returnerer en tabell
+        int[] b = Tabell.KennethsNestMax(a);  // metoden returnerer en tabell
 
         int m = b[0], nm = b[1];       // m for maks, nm for nestmaks
 
@@ -54,6 +54,18 @@ public class Program
         System.out.print("Størst(" + a[m] + ") har posisjon " + m);
         System.out.println(", nest størst(" + a[nm] + ") har posisjon " + nm);
 
+        int[] listTall = new int[]{1,10,11,15,2,3,6,4,8,20,19,33,12,7};
+
+        Tabell.skrivln(listTall);
+        Tabell.SorteringNestmaks(listTall);
+        Tabell.skrivln(listTall);
+         */
+
+        int[] liste = new int[3];
+        for (int i = 0; i < 3; i++) {
+            liste[i] = i*3;
+        }
+        for(int i : liste) System.out.print(i + ", ");
     } // main
 
 } // class Program
