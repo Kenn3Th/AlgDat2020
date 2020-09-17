@@ -1,11 +1,4 @@
 # Obligatorisk oppgave 1 i Algoritmer og Datastrukturer
 
-Denne oppgaven er en innlevering i Algoritmer og Datastrukturer. 
-Oppgaven er levert av følgende studenter:
-* Kenneth R. Eikrehagen, S331475, s331475@oslomet.no
-* ...
-
-# Arbeidsfordeling
-
-I oppgaven har vi hatt følgende arbeidsfordeling:
-* Kenneth har løst oppgave 1, 2 og 3 
+Dette er bare kode jeg gjorde for å leke meg litt med de forskjellige modul/funksjonene i denne obligen.
+Den løste oppgaven finner du her https://github.com/odeta939/AlgsOblig1/blob/master/no/oslomet/cs/algdat/Oblig1/Oblig1.java
