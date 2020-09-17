@@ -23,9 +23,10 @@ public class Oblig1 {
                 max = tallrekke[i];
                 tallrekke[i] = tallrekke[i+1];
                 tallrekke[i+1] = max;
-            }else if(tallrekke[i+1]>max){
-                max=tallrekke[i+1];
             }
+        }
+        if(tallrekke[end]>max){
+            max=tallrekke[end];
         }
         return max; //Returnerer den maksimale verdien i tallrekken
     }
@@ -308,16 +309,72 @@ public class Oblig1 {
 
     /********************* Oppgave 9 *********************/
     public static int[] tredjeMin(int[] a) {
-        throw new UnsupportedOperationException();
+
+        int n = a.length;
+        if (n < 3) throw new java.util.NoSuchElementException("a.length(" + n + ") < 3!");
+
+        int[] b= indekssortering(new int[] {a[0],a[1],a[2]});
+
+        int m = b[0];
+        int nm = b[1];
+        int am = b[2];
+
+        int førsteminstverdi = a[m]; // minste verdi
+        int andreminstverdi = a[nm];// nest minste verdi
+        int tredjeminstverdi = a[am]; // tredje minste verdi
+
+        for (int i = 3; i < n; i++) {
+            if (a[i] < førsteminstverdi) {
+                am = nm;
+                tredjeminstverdi = andreminstverdi;
+                nm = m;
+                andreminstverdi = førsteminstverdi;
+                m = i;
+                førsteminstverdi = a[i];
+
+            } else if (a[i] < andreminstverdi) {
+                am = nm;
+                tredjeminstverdi = andreminstverdi;
+                nm = i;
+                andreminstverdi = a[i];
+            } else {
+                am = i;
+                tredjeminstverdi = a[i];
+            }
+        }
+
+
+        return new int[]{m, nm, am};
+
+
+
     }
 
     /********************* Oppgave 10 *********************/
-    public static int bokstavNr(char bokstav) {
-        throw new UnsupportedOperationException();
-    }
+    public static boolean inneholdt (String a, String b){
 
-    public static boolean inneholdt(String a, String b) {
-        throw new UnsupportedOperationException();
+        boolean svar = true;
+        int[] countA = new int[256];
+        int[] countB = new int[256];
+
+        for(int i = 0; i<a.length(); i++){
+            countA[a.charAt(i)]++;
+        }
+        for(int i = 0; i<b.length(); i++){
+            countB[b.charAt(i)]++;
+        }
+
+        for(int i = 0; i< countA.length; i++){
+            if(countB[i] >= 0) {
+                if (countB[i]-countA[i]<0) {
+                    //System.out.println(index);
+                    svar = false;
+                    break;
+                }
+            }
+        }
+        //System.out.println(svar);
+        return svar;
     }
 
 }  // Oblig1

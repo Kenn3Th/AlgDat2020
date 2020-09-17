@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="783fa044-90a0-4e4a-b547-2d3423087de3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kap1.2/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kap1.2/src/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kap1.2/src/hjelpeklasse/Tabell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kap1.2/src/hjelpeklasse/Tabell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Oblig1/src/egenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oblig1/src/egenTest.java" afterDir="false" />
     </list>
@@ -190,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598824329659</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lekt meg litt med forskjellige oppgaver">
+      <created>1599502692409</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1599502692409</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -204,32 +209,33 @@
     <MESSAGE value="Løst oppgave 3" />
     <MESSAGE value="Lagt til test for oppgave 4 men det er en feil" />
     <MESSAGE value="Løst oppgave 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Løst oppgave 8" />
+    <MESSAGE value="Lekt meg litt med forskjellige oppgaver" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lekt meg litt med forskjellige oppgaver" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1598824329242">
+    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1599502691941">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1598824329242" />
-    <state width="1238" height="128" key="GridCell.Tab.0.bottom" timestamp="1599478301840">
+    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1599502691941" />
+    <state width="1238" height="128" key="GridCell.Tab.0.bottom" timestamp="1600092077584">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="128" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1599478301840" />
+    <state width="1238" height="128" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1600092077584" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1598601572755" />
-    <state width="1238" height="128" key="GridCell.Tab.0.center" timestamp="1599478301838">
+    <state width="1238" height="128" key="GridCell.Tab.0.center" timestamp="1600092077583">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="128" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1599478301838" />
+    <state width="1238" height="128" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1600092077583" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1598601572753" />
-    <state width="1238" height="128" key="GridCell.Tab.0.left" timestamp="1599478301836">
+    <state width="1238" height="128" key="GridCell.Tab.0.left" timestamp="1600092077582">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="128" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1599478301836" />
+    <state width="1238" height="128" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1600092077582" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1598601572752" />
-    <state width="1238" height="128" key="GridCell.Tab.0.right" timestamp="1599478301839">
+    <state width="1238" height="128" key="GridCell.Tab.0.right" timestamp="1600092077583">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="128" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1599478301839" />
+    <state width="1238" height="128" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1600092077583" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1598601572754" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1598825191924">
       <screen x="0" y="0" width="1280" height="800" />
@@ -247,14 +253,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1598825191924" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598824336741">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1599502694381">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598824336741" />
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1599045805692">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1599502694381" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1600328745643">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1599045805692" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1600328745643" />
     <state x="317" y="248" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1598249501627" />
     <state x="221" y="125" width="837" height="550" key="find.popup" timestamp="1597693410884">
       <screen x="0" y="0" width="1280" height="800" />
@@ -264,10 +270,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="17" y="23" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1598591051270" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1599463931768">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1600075912234">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1599463931768" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1600075912234" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -289,16 +295,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java</url>
-          <line>52</line>
+          <line>53</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Oblig1/src/egenTest.java</url>
+          <line>851</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java</url>
-          <line>220</line>
+          <line>221</line>
           <properties class="Oblig1.Oblig1">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Oblig1/src/egenTest.java</url>
+          <line>372</line>
+          <properties class="egenTest" method="oppgave6">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Oblig1/src/egenTest.java</url>
+          <line>330</line>
+          <properties class="egenTest" method="oppgave5">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

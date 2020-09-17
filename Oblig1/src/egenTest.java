@@ -21,13 +21,15 @@ import java.util.*;
  */
 public class egenTest {
     public static void main(String[] args){
-        oppgave1();
-        oppgave2();
-        oppgave3();
-        oppgave4();
-        oppgave8();
-        oppgave5();
-        oppgave6();
+        //oppgave1();
+        //oppgave2();
+        //oppgave3();
+        //oppgave4();
+        //oppgave8();
+        //oppgave5();
+        //oppgave6();
+        //oppgave9();
+        oppgave10();
 
     }
     ///// Oppgave 1 //////////////////////////////////////
@@ -152,9 +154,7 @@ public class egenTest {
                     ("Oppgave 3: a) Ikke unntak for tabell med 0 eller 1 verdi!");
             antallFeil++;
         }
-        if (Oblig1.antallUlikeUsortert(d) == 6){
-            System.out.println("Suksess");
-        }
+
         if (Oblig1.antallUlikeUsortert(a) != 0
                 || Oblig1.antallUlikeUsortert(b) != 1
                 || Oblig1.antallUlikeUsortert(c) != 1
@@ -164,12 +164,6 @@ public class egenTest {
             System.out.println("Oppgave 3: b) Metoden gir feil resultat!");
             antallFeil++;
         }
-        System.out.println("a: " + Oblig1.antallUlikeUsortert(a));
-        System.out.println("b: " + Oblig1.antallUlikeUsortert(b));
-        System.out.println("c: " + Oblig1.antallUlikeUsortert(c));
-        System.out.println("d: " + Oblig1.antallUlikeUsortert(d));
-        System.out.println("e: " + Oblig1.antallUlikeUsortert(e));
-        System.out.println("f: " + Oblig1.antallUlikeUsortert(f));
 
         if (!Arrays.equals(d, dkopi)) {
             System.out.println("Oppgave 3: c) Metoden endrer tabellen!");
@@ -421,9 +415,7 @@ public class egenTest {
 
         c = new char[]{'A', 'B'};
 
-        //System.out.println(c); //Sjekker listen før funksjonen
         Oblig1.rotasjon(c, -1); //Kaller funksjonen
-        //System.out.println(c); //Sjekker listen etter funksjonen
 
         if (!Arrays.equals(c, c0)) {
             System.out.println("Oppgave 6: f) Feil hvis tabellen har to elementer!");
@@ -601,6 +593,231 @@ public class egenTest {
         }
 
         //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 8");
+    }
+
+    ///// Oppgave 9 //////////////////////////////////////
+    static void oppgave9() {
+        int antallFeil = 0;
+
+        boolean unntak = false;
+        int[] test = {1, 2};
+        try {
+            Oblig1.tredjeMin(test);  // kaller metoden
+        } catch (Exception e) {
+            unntak = true;
+            if (!(e instanceof NoSuchElementException)) {
+                System.out.println("Opgave 9: a) Feil unntak!");
+                antallFeil++;
+            }
+        }
+
+        if (!unntak) {
+            System.out.println
+                    ("Opgave 9: b) Det skal kastes unntak for tabeller med for få verdier!");
+            antallFeil++;
+        }
+
+        int[] tabell = new int[]{1, 2, 3};
+        boolean flere1 = true;
+
+        while (flere1) {
+            int[] c = Oblig1.tredjeMin(tabell);
+
+            if (tabell[c[0]] != 1 || tabell[c[1]] != 2 || tabell[c[2]] != 3) {
+                System.out.println("Oppgave 9: c) Feil for " + Arrays.toString(tabell));
+                antallFeil++;
+                break;
+            }
+            flere1 = nestePermutasjon(tabell);
+        }
+
+        int[] b = randPerm(10);
+        int[] d = Oblig1.tredjeMin(b);
+
+        System.out.println("Minst: " + b[d[0]] + " nest minst " + b[d[1]] + " nest nest minst: "+ b[d[2]]);
+
+        if (b[d[0]] != 1 || b[d[1]] != 2 || b[d[2]] != 3) {
+            System.out.println("Oppgave 9: d) Feil for " + Arrays.toString(b));
+            antallFeil++;
+        }
+
+        int[] x = {6, 3, 9, 1, 10, 5, 2, 8, 4, 7};
+        int[] y = x.clone();
+        Oblig1.tredjeMin(x);
+
+        if (!Arrays.equals(x, y)) {
+            System.out.println
+                    ("Oppgave 9: e) Metoden gjør endringer i tabellen!");
+            System.out.println("Tabellen før: " + Arrays.toString(y));
+            System.out.println("Tabellen etter: " + Arrays.toString(x));
+            antallFeil++;
+        }
+
+        int[] a = {1, 2, 3, 4, 5, 6};
+        boolean flere2 = true;
+
+        while (flere2) {
+            int[] c = Oblig1.tredjeMin(a);
+
+            int m = c[0];
+            int nm = c[1];
+            int tm = c[2];
+            System.out.println("Minst: " + a[m] + " nest minst " + a[nm] + " nest nest minst: "+ a[tm]);
+            if (a[m] != 1 || a[nm] != 2 || a[tm] != 3) {
+                System.out.println("Oppgave 9: f) Feil for " + Arrays.toString(a));
+                antallFeil++;
+                break;
+            }
+
+            flere2 = nestePermutasjon(a);
+        }
+
+        a = randPerm(100_000);
+        long tid = System.currentTimeMillis();
+        Oblig1.tredjeMin(a);
+        tid = System.currentTimeMillis() - tid;
+
+
+        if (tid > 100) {
+            System.out.println("Oppgave 9: g) Metoden er ineffektiv! Bruker du");
+            System.out.println("metoden indekssortering på hele tabellen?");
+            antallFeil++;
+        }
+
+        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 9");
+    }
+
+    ///// Oppgave 10 //////////////////////////////////////
+    static void oppgave10() {
+        int antallFeil = 0;
+        boolean b = false;
+
+        try {
+            b = Oblig1.inneholdt("", "");  // kaller metoden
+        } catch (Exception e) {
+            System.out.println(e);
+            System.out.println
+                    ("Oppgave 10: a) Skal ikke kaste unntak for to tomme ord!!");
+            antallFeil++;
+        }
+
+        if (b != true) {
+            System.out.println
+                    ("Oppgave 10: b) Svaret skal bli lik true her!");
+            antallFeil++;
+        }
+
+        try {
+            b = Oblig1.inneholdt("", "A");  // kaller metoden
+        } catch (Exception e) {
+            System.out.println(e);
+            System.out.println
+                    ("Oppgave 10: c) Skal ikke kaste unntak for et tomt ord!!");
+            antallFeil++;
+        }
+
+        if (b != true) {
+            System.out.println
+                    ("Oppgave 10: d) Svaret skal bli lik true her!");
+            antallFeil++;
+        }
+
+        try {
+            b = Oblig1.inneholdt("A", "");  // kaller metoden
+        } catch (Exception e) {
+            //System.out.println(e);
+            System.out.println
+                    ("Oppgave 10: e) Skal ikke kaste unntak for et tomt ord!!");
+            antallFeil++;
+        }
+
+        if (b != false) {
+            System.out.println
+                    ("Oppgave 10: f) Svaret skal bli lik false her!");
+            antallFeil++;
+        }
+
+        b = Oblig1.inneholdt("ABBA", "ABBA");
+        if (b != true) {
+            System.out.println
+                    ("Oppgave 10: g) Svaret skal bli lik true her!");
+            antallFeil++;
+        }
+
+        b = Oblig1.inneholdt("XYYX", "AAAAAAAYXXY");
+        if (b != true) {
+            System.out.println
+                    ("Oppgave 10: h) Svaret skal bli lik true her!");
+            antallFeil++;
+        }
+
+        b = Oblig1.inneholdt("ABBA", "RABARBRA");
+        if (b != true) {
+            System.out.println
+                    ("Oppgave 10: i) Svaret skal bli lik true her!");
+            antallFeil++;
+        }
+
+        b = Oblig1.inneholdt("ABBA", "BARBERER");
+        if (b != false) {
+            System.out.println
+                    ("Oppgave 10: j) Svaret skal bli lik false her!");
+            antallFeil++;
+        }
+
+        b = Oblig1.inneholdt("ABBA", "AKROBAT");
+        if (b != false) {
+            System.out.println
+                    ("Oppgave 10: k) Svaret skal bli lik false her!");
+            antallFeil++;
+        }
+
+        b = Oblig1.inneholdt("ØÅÅØ", "ØØÅØØ");
+        if (b != false) {
+            System.out.println
+                    ("Oppgave 10: l) Svaret skal bli lik false her!");
+            antallFeil++;
+        }
+
+        b = Oblig1.inneholdt("ØÅÅØ", "ÅØØÅØ");
+        if (b == false) {
+            System.out.println
+                    ("Oppgave 10: m) Svaret skal bli lik true her!");
+            antallFeil++;
+        }
+
+        char[] x = new char[100000];
+        for (int i = 0; i < 50000; i++) {
+            x[2 * i] = 'X';
+            x[2 * i + 1] = 'Y';
+        }
+        String t = String.copyValueOf(x);
+
+        char[] y = new char[100000];
+        for (int i = 0; i < 49999; i++) {
+            y[2 * i] = 'X';
+            y[2 * i + 1] = 'Y';
+        }
+        y[99998] = 'Z';
+        y[99999] = 'Z';
+        String s = String.copyValueOf(y);
+
+        long tid = System.currentTimeMillis();
+        b = Oblig1.inneholdt(s, t);
+        tid = System.currentTimeMillis() - tid;
+
+        if (tid > 100) {
+            System.out.println
+                    ("Oppgave 10: n) Dette (" + tid + " ms) gikk sakte! Finn en bedre algoritme!");
+            antallFeil++;
+        }
+
+        if (b != false) {
+            System.out.println
+                    ("Oppgave 10: o) Svaret skal bli lik false her!");
+            antallFeil++;
+        }
+        //assertEquals(0, antallFeil, "Du har for mange feil i oppgave 10");
     }
 
     ///// Hjelpemetoder /////////////////////////////
