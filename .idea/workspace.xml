@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="783fa044-90a0-4e4a-b547-2d3423087de3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Kap1.4/Kap1.4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kap1.4/src/Uke37.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kap1.4/src/eksempelKlasser/Generisk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kap1.4/src/hjelpeklasse/Tabell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oblig1/src/egenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oblig1/src/egenTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.egenTest">
+  <component name="RunManager" selected="Application.Uke37">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Program" />
       <module name="Kap1.2" />
@@ -57,16 +60,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Uke34" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Uke34" />
-      <module name="Kap1" />
+    <configuration name="Uke35" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Uke35" />
+      <module name="Kap1.2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Uke35" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Uke35" />
-      <module name="Kap1.2" />
+    <configuration name="Uke37" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Uke37" />
+      <module name="Kap1.4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,11 +83,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Uke37" />
         <item itemvalue="Application.egenTest" />
         <item itemvalue="Application.Program" />
         <item itemvalue="Application.Tabell" />
         <item itemvalue="Application.Uke35" />
-        <item itemvalue="Application.Uke34" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599502692409</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Lekt meg litt med forskjellige oppgaver">
+      <created>1600328802664</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1600328802664</updated>
+    </task>
+    <task id="LOCAL-00014" summary="La til en beskrivelse">
+      <created>1600328969704</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1600328969704</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,32 +227,37 @@
     <MESSAGE value="Lagt til test for oppgave 4 men det er en feil" />
     <MESSAGE value="Løst oppgave 8" />
     <MESSAGE value="Lekt meg litt med forskjellige oppgaver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lekt meg litt med forskjellige oppgaver" />
+    <MESSAGE value="La til en beskrivelse" />
+    <option name="LAST_COMMIT_MESSAGE" value="La til en beskrivelse" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1600328802110">
+    <state x="378" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1600626773619">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1600328802110" />
-    <state width="1238" height="128" key="GridCell.Tab.0.bottom" timestamp="1600092077584">
+    <state x="378" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1600626773619" />
+    <state x="168" y="2" key="CommitChangelistDialog2" timestamp="1600328969345">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="128" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1600092077584" />
+    <state x="168" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1600328969345" />
+    <state width="1238" height="128" key="GridCell.Tab.0.bottom" timestamp="1600677318728">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="128" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1600677318728" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1598601572755" />
-    <state width="1238" height="128" key="GridCell.Tab.0.center" timestamp="1600092077583">
+    <state width="1238" height="128" key="GridCell.Tab.0.center" timestamp="1600677318727">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="128" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1600092077583" />
+    <state width="1238" height="128" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1600677318727" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1598601572753" />
-    <state width="1238" height="128" key="GridCell.Tab.0.left" timestamp="1600092077582">
+    <state width="1238" height="128" key="GridCell.Tab.0.left" timestamp="1600677318726">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="128" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1600092077582" />
+    <state width="1238" height="128" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1600677318726" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1598601572752" />
-    <state width="1238" height="128" key="GridCell.Tab.0.right" timestamp="1600092077583">
+    <state width="1238" height="128" key="GridCell.Tab.0.right" timestamp="1600677318727">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="128" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1600092077583" />
+    <state width="1238" height="128" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1600677318727" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1598601572754" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1598825191924">
       <screen x="0" y="0" width="1280" height="800" />
@@ -253,27 +275,27 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1598825191924" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1600328808658">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1600328971644">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1600328808658" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1600328971644" />
     <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1600328745643">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1600328745643" />
     <state x="317" y="248" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1598249501627" />
-    <state x="221" y="125" width="837" height="550" key="find.popup" timestamp="1597693410884">
+    <state x="221" y="125" width="837" height="550" key="find.popup" timestamp="1600516206136">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="221" y="125" width="837" height="550" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1597693410884" />
-    <state x="17" y="23" key="new project wizard" timestamp="1598591051270">
+    <state x="221" y="125" width="837" height="550" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1600516206136" />
+    <state x="17" y="23" key="new project wizard" timestamp="1600432921450">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="17" y="23" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1598591051270" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1600075912234">
+    <state x="17" y="23" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1600432921450" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1600676907606">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1600075912234" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1600676907606" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -307,6 +329,16 @@
           <url>file://$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java</url>
           <line>14</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Kap1.4/src/hjelpeklasse/Tabell.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Kap1.4/src/hjelpeklasse/Tabell.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Oblig1/src/Oblig1/Oblig1.java</url>
